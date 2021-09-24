@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './store';
+import { composeWithDevTools } from "redux-devtools-extension";
 
 ReactDOM.render(
   <Provider store={store}>
