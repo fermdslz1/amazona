@@ -7,7 +7,7 @@ export const generateToken = (user)=>{
         email: user.name,
         isAdmin: user.isAdmin,
     }, 
-    process.env.JWT_SECRET, 
+    process.env.JWT_SECRET, // || secret -> to share project and will still work
     {
         expiresIn: '30d',
     });
